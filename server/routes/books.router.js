@@ -1,6 +1,9 @@
+
 const express = require('express');
 // Make a router
 const router = express.Router();
+
+const bookList = [];
 
 router.get('/book', (req, res) => {
     res.send(bookList);

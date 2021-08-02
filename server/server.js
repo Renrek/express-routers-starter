@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const booksRouter = require('./routes/books.router');
 const app = express();
 const PORT = process.env.PORT || 5000;
-const bookList = [];
+
 const movieList = [];
 
 // express static file serving - public is the folder name
