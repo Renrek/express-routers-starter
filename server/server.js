@@ -13,7 +13,7 @@ app.use( express.static('server/public') );
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-app.use('/', booksRouter);
+app.use('/book', booksRouter);
 
 // Start server listening on PORT
 app.listen(PORT, () => {

@@ -5,11 +5,11 @@ const router = express.Router();
 
 const bookList = [];
 
-router.get('/book', (req, res) => {
+router.get('/', (req, res) => {
     res.send(bookList);
 });
 
-router.post('/book', (req, res) => {
+router.post('/', (req, res) => {
     bookList.push(req.body);
     res.sendStatus(200);
 });
